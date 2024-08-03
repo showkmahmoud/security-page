@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- /Fonts -->
+    <!-- style -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="../assets/style/style.css" />
+    <!-- /style -->
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="d-flex w-100 justify-content-between ps-3 pe-0">
+      <!-- main btns -->
+      <div class="d-flex">
+        <button
+          class="main-nav-btn d-flex align-items-center justify-content-center active-btn"
+        >
+          <img src="./assets/icons/User (1).png" alt="" />
+          <p class="my-0 pe-3">تسجيل عادي</p>
+        </button>
+        <button
+          class="main-nav-btn d-flex align-items-center justify-content-center"
+        >
+          <img src="./assets/icons/Icon.png" alt="" />
+          <p class="my-0 pe-3">تسجيل سريع</p>
+        </button>
+        <button
+          class="main-nav-btn d-flex align-items-center justify-content-center"
+        >
+          <img src="./assets/icons/users.png" alt="" />
+          <p class="my-0 pe-3">تسجيل مجموعه</p>
+        </button>
+        <button
+          class="main-nav-btn d-flex align-items-center justify-content-center"
+        >
+          <img src="./assets/icons/User check.png" alt="" />
+          <p class="my-0 pe-3">استدعاء نفس الزائر</p>
+        </button>
+        <button
+          class="main-nav-btn d-flex align-items-center justify-content-center"
+        >
+          <img src="./assets/icons/User check.png" alt="" />
+          <p class="my-0 pe-3">استدعاء نفس الزائر</p>
+        </button>
+      </div>
+      <!-- /main btns -->
+      <!-- delete btn -->
+      <div class="delete-btn d-flex align-items-center justify-content-center">
+        <i class="bi bi-trash"></i>
+        <p class="my-0 pe-3">مسح الكل</p>
+      </div>
+    </nav>
+    <!-- /nav -->
+    <!-- side bar -->
+    <div class="sidebar">
+      <!-- main btns wrapper open/close menu -->
+      <div class="d-flex flex-column gap-3 pb-3 sidebar-main-btns">
+        <!-- unlock the sidebar -->
+        <img
+          src="./assets/icons/lock.png"
+          class="sidebar-item"
+          alt="unlock the sidebar"
+        />
+        <!-- lock the sidebar -->
+        <!-- <i class="bi bi-unlock sidebar-item fs-4"></i> -->
+
+        <!-- open sidebar -->
+        <img
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions"
+          src="./assets/icons/align-center.png"
+          class="sidebar-item"
+          alt="lock the sidebar"
+        />
+      </div>
+      <!-- sidebar btns -->
+      <div class="d-flex flex-column gap-5 pt-4 px-1">
+        <img
+          src="./assets/icons/Grid.png"
+          class="sidebar-item"
+          alt="Grid button"
+        />
+        <img
+          src="./assets/icons/Filter (1).png"
+          class="sidebar-item active-sidebar-item"
+          alt="Filter button"
+        />
+        <img
+          src="./assets/icons/archive.png"
+          class="sidebar-item"
+          alt="archive button"
+        />
+        <img
+          src="./assets/icons/archive.png"
+          class="sidebar-item"
+          alt="archive button"
+        />
+        <img
+          src="./assets/icons/archive.png"
+          class="sidebar-item"
+          alt="archive button"
+        />
+        <img
+          src="./assets/icons/archive.png"
+          class="sidebar-item"
+          alt="archive button"
+        />
+        <img
+          src="./assets/icons/settings.png"
+          class="sidebar-item"
+          alt="settings button"
+        />
+        <img
+          src="./assets/icons/life-buoy.png"
+          class="sidebar-item"
+          alt="life button"
+        />
+      </div>
+      <!-- the side bar content when it open -->
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+            Backdrop with scrolling
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>
+            Try scrolling the rest of the page to see this option in action.
+          </p>
+        </div>
+      </div>
+      <!-- the side bar content when it open -->
+    </div>
+    <!-- /side bar -->
+    <!-- layout for tabs -->
+    <div class="layout-steps row mx-0 gap-3">
+      <!-- first tab (main visitor info step) -->
+      <div class="step first-step has-divider col-lg-5 col-md-5 col-sm-12 pb-4">
+        <div
+          class="tab-header d-flex justify-content-between align-items-center"
+        >
+          <p class="my-0">
+            الخطوه الأولى
+            <span>(بيانات الزائر الاساسيه)</span>
+          </p>
+          <img src="./assets/icons/check-circle green.png" alt="check" />
+        </div>
+        <!-- personal IDs -->
+        <div
+          class="personal-ids-wrapper row w-100 flex-nowrap mx-0 mt-3 justify-content-between"
+        >
+          <div class="personal-ids row justify-content-between mx-0 col-9 px-0">
+            <div class="col-3 px-1 curoser-pointer">
+              <div class="personal-id active-id rounded p-2">
+                <p class="fw-bolder text-white">البطاقه الشخصيه</p>
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/smallPersonalID.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-3 px-1 curoser-pointer">
+              <div class="personal-id rounded p-2">
+                <p class="fw-bolder text-center white-space-nowrap">
+                  جواز السفر
+                </p>
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/passpo.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-3 px-1 curoser-pointer">
+              <div class="personal-id rounded p-2">
+                <p class="fw-bolder">رخصه القياده</p>
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/drive.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-3 px-1 curoser-pointer">
+              <div class="personal-id rounded p-2">
+                <p class="fw-bolder">اضافه</p>
+                <div class="img-wrapper">
+                  <img src="./assets/icons/add-folder.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- states -->
+          <div class="col-3 px-0">
+            <div class="state-wrapper px-0 text-center">
+              <img class="" src="./assets//icons/state=Allow.png" alt="" />
+              <!-- <img src="./assets//icons/state=Deny.png" alt="" /> -->
+              <!-- <img src="./assets//icons/state=appointment.png" alt="" /> -->
+            </div>
+          </div>
+        </div>
+        <!-- personal-id-screen (front/back ID) -->
+        <div class="personal-id-screen-wrapper mt-3">
+          <button
+            class="main-nav-btn d-flex align-items-center justify-content-center border-0 active-btn"
+          >
+            <img src="./assets/icons/check-square.png" alt="" />
+            <p class="my-0 pe-3 fz-12">البطاقه الشخصيه</p>
+          </button>
+          <div class="personal-id-screen d-flex p-4 py-3">
+            <div class="col-9">
+              <img src="./assets/imgs/personalIdFront.png" alt="" />
+            </div>
+            <div class="col-3 d-flex flex-column">
+              <div class="delete-btn p-3 border-0 text-center me-auto">
+                <i class="bi bi-trash text-white fs-4"></i>
+              </div>
+              <img
+                class="back-id-data"
+                src="./assets/imgs/Screenshot 2024-07-22 at 10.27.52 3.png"
+                alt=""
+              />
+              <img src="./assets/imgs/backPersonalId.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- forms -->
+        <div
+          class="form-wrapper d-flex gap-2 mx-0 mt-3 justify-content-between"
+        >
+          <!-- person form inputs -->
+          <div class="id-form-wrapper col-8 px-3 py-1">
+            <p class="d-flex align-items-center mb-1">
+              <span> بطاقه اثبات الشخصيه </span>
+              <img class="me-3" src="./assets/icons/info.png" alt="" />
+            </p>
+            <form class="row">
+              <!-- name -->
+              <div class="col-12 input-wrapper mb-3">
+                <label for="Name" class="form-label">
+                  الاسم
+                  <span class="required">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Name"
+                  placeholder="محمد احمد السيد احمد"
+                />
+              </div>
+              <!-- ID Number -->
+              <div class="col-7 input-wrapper mb-3">
+                <label for="idNumber" class="form-label">
+                  الرقم القومي
+                  <span class="required">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="idNumber"
+                  placeholder=" الرقم القومي المكون من ١٤ رقم  "
+                />
+              </div>
+              <!-- birth countery -->
+              <div class="col-5 input-wrapper mb-3">
+                <label for="birth countery" class="form-label">
+                  محافظه الميلاد
+                  <span class="required">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="birth countery"
+                  placeholder="  محافظه الميلاد "
+                />
+              </div>
+              <!-- Address -->
+              <div class="col-7 input-wrapper mb-3">
+                <label for="address" class="form-label">
+                  العنوان
+                  <span class="required">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address"
+                  placeholder=" عنوان الزائر   "
+                />
+              </div>
+              <!-- Gender -->
+              <div class="col-5 input-wrapper mb-3">
+                <label class="form-label"> النوع </label>
+                <select class="form-select">
+                  <option class="text-gray" selected>ذكر</option>
+                  <option class="text-gray" value="1">أنثى</option>
+                </select>
+              </div>
+              <!-- Work -->
+              <div class="col-7 input-wrapper">
+                <label class="form-label">
+                  جهه العمل
+                  <span class="required">*</span>
+                </label>
+                <select class="form-select">
+                  <option class="text-gray" selected>جهه عمل الزائر</option>
+                </select>
+              </div>
+              <!-- date of birth -->
+              <div class="col-5 input-wrapper">
+                <label class="form-label"> تاريخ الميلاد </label>
+                <input
+                  class="w-100 px-2"
+                  type="date"
+                  placeholder="يوم/شهر/سنه"
+                  id="dateInput"
+                  name="dateInput"
+                />
+              </div>
+            </form>
+          </div>
+          <!-- car form inputs -->
+          <div class="car-form-wrapper col-4 px-3 py-1">
+            <p class="d-flex align-items-center mb-1">
+              <span> رخصه السياره </span>
+              <img class="me-3" src="./assets/icons/info.png" alt="" />
+            </p>
+            <form class="row">
+              <!-- Car Number -->
+              <div class="col-12 input-wrapper mb-3">
+                <label for="CarNumberPlate" class="form-label">
+                  رقم السياره
+                </label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="CarNumberPlate"
+                  placeholder="ادخل رقم لوحه السياره "
+                />
+              </div>
+              <!-- Car Type -->
+              <div class="col-12 input-wrapper mb-3 mt-1">
+                <label for="carType" class="form-label"> فئه السياره </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="carType"
+                  placeholder=" ميرسيديس  "
+                />
+              </div>
+              <!-- date of production -->
+              <div class="col-12 input-wrapper mb-3">
+                <label class="form-label"> تاريخ الاصدار </label>
+                <input
+                  class="w-100 px-2"
+                  type="date"
+                  placeholder="----/--/--"
+                  id="dateInput"
+                  name="dateInput"
+                />
+              </div>
+              <!-- date of exp -->
+              <div class="col-12 input-wrapper mt-1">
+                <label class="form-label"> تاريخ الانتهاء </label>
+                <input
+                  class="w-100 px-2"
+                  type="date"
+                  placeholder="----/--/--"
+                  id="dateInput"
+                  name="dateInput"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- /first tab (main visitor info step) -->
+      <!-- Sec tab (visiting places step) -->
+      <div class="step sec-step has-divider col-lg-3 col-md-3 col-sm-12">
+        <!-- step two header -->
+        <div
+          class="tab-header d-flex justify-content-between align-items-center"
+        >
+          <p class="my-0">
+            الخطوه الثانيه
+            <span>(بطاقه الزياره - اماكن الزيارات) </span>
+          </p>
+          <img src="./assets/icons/check-circle.png" alt="check" />
+        </div>
+        <!-- visits ID  -->
+        <p class="d-flex align-items-center mb-1 mt-3">
+          <span class="fz-14 fn-700"> رقم بطاقه الزياره </span>
+          <img class="me-3" src="./assets/icons/info.png" alt="" />
+        </p>
+        <div class="row mx-0 align-items-center">
+          <!-- visiting number -->
+          <div class="input-wrapper mt-2 col-7 px-0">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="رقم بطاقه الزياره المكون من عشره ارقام"
+            />
+          </div>
+          <!-- button -->
+          <div class="mt-2 col-5 px-0">
+            <button
+              class="main-btn d-flex align-items-center justify-content-center active-btn me-auto"
+            >
+              <p class="my-0 fn-700 white-space-nowrap fz-12">
+                معلومات عن بطاقه الزياره
+              </p>
+            </button>
+          </div>
+          <!-- date form -->
+          <div class="col-12 mt-3 bg-ligh-gray rounded p-2 text-black">
+            <span class="fn-700 fz-14">توقيت الدخول: </span>
+            <span>24 مايو 2024</span>
+            <span> 04:55 ص</span>
+            <span class="fn-700 fz-14">توقيت الخروج: </span>
+            <span></span>
+          </div>
+        </div>
+        <!-- visites places -->
+        <p class="d-flex align-items-center mb-1 mt-4">
+          <span class="fz-14 fn-700"> رقم بطاقه الزياره </span>
+          <img class="me-3" src="./assets/icons/info.png" alt="" />
+        </p>
+        <!-- visiting number -->
+        <div class="row mx-0 align-items-center">
+          <div class="input-wrapper mt-2 col-12 px-0">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="اماكن الزياره - بحث سريع"
+            />
+          </div>
+          <!-- levels -->
+          <div class="col-4 input-wrapper mb-3 mt-2 pe-0 ps-1">
+            <select class="form-select fz-12">
+              <option class="text-gray" selected>المستوى الاول</option>
+              <option class="text-gray" value="1">المستوى الثانى</option>
+            </select>
+          </div>
+          <div class="col-4 input-wrapper mb-3 mt-2 px-1">
+            <select class="form-select fz-12">
+              <option class="text-gray" selected>المستوى الثانى</option>
+            </select>
+          </div>
+          <div class="col-4 input-wrapper mb-3 mt-2 pe-1 ps-0">
+            <select class="form-select fz-12">
+              <option class="text-gray" selected>المستوى الثالث</option>
+            </select>
+          </div>
+        </div>
+        <!-- The Most Used Places -->
+        <p class="d-flex align-items-center mb-1 mt-3">
+          <span class="fz-14 fn-700">الاماكن الاكثر استخداما</span>
+        </p>
+        <!-- most used visits -->
+        <div class="row mx-0">
+          <!-- active -->
+          <div class="col-3 pe-0">
+            <div
+              class="used-visit-wrapper bg-ligh-gray p-2 rounded-3 active-visit"
+            >
+              <div class="d-flex icons-wrapper justify-content-between">
+                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <i class="bi bi-check-square curoser-pointer"></i>
+              </div>
+              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
+              <div
+                class="main-btn active-visit-btn fn-700 text-white white-space-nowrap text-center"
+              >
+                متواجد (٥٠٠)
+              </div>
+            </div>
+          </div>
+          <!-- used visits -->
+          <div class="col-3 pe-0 mb-3">
+            <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
+              <div class="d-flex icons-wrapper justify-content-between">
+                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <i class="bi bi-check-square curoser-pointer"></i>
+              </div>
+              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
+              <div
+                class="main-btn fn-700 text-white white-space-nowrap text-center"
+              >
+                متواجد (٥٠٠)
+              </div>
+            </div>
+          </div>
+          <div class="col-3 pe-0 mb-3">
+            <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
+              <div class="d-flex icons-wrapper justify-content-between">
+                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <i class="bi bi-check-square curoser-pointer"></i>
+              </div>
+              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
+              <div
+                class="main-btn fn-700 text-white white-space-nowrap text-center"
+              >
+                متواجد (٥٠٠)
+              </div>
+            </div>
+          </div>
+          <div class="col-3 pe-0 mb-3">
+            <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
+              <div class="d-flex icons-wrapper justify-content-between">
+                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <i class="bi bi-check-square curoser-pointer"></i>
+              </div>
+              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
+              <div
+                class="main-btn fn-700 text-white white-space-nowrap text-center"
+              >
+                متواجد (٥٠٠)
+              </div>
+            </div>
+          </div>
+          <div class="col-3 pe-0 mb-3">
+            <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
+              <div class="d-flex icons-wrapper justify-content-between">
+                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <i class="bi bi-check-square curoser-pointer"></i>
+              </div>
+              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
+              <div
+                class="main-btn fn-700 text-white white-space-nowrap text-center"
+              >
+                متواجد (٥٠٠)
+              </div>
+            </div>
+          </div>
+          <div class="col-3 pe-0 mb-3">
+            <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
+              <div class="d-flex icons-wrapper justify-content-between">
+                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <i class="bi bi-check-square curoser-pointer"></i>
+              </div>
+              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
+              <div
+                class="main-btn fn-700 text-white white-space-nowrap text-center"
+              >
+                متواجد (٥٠٠)
+              </div>
+            </div>
+          </div>
+          <div class="col-3 pe-0 mb-3">
+            <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
+              <div class="d-flex icons-wrapper justify-content-between">
+                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <i class="bi bi-check-square curoser-pointer"></i>
+              </div>
+              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
+              <div
+                class="main-btn fn-700 text-white white-space-nowrap text-center"
+              >
+                متواجد (٥٠٠)
+              </div>
+            </div>
+          </div>
+          <div class="col-3 pe-0 mb-3">
+            <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
+              <div class="d-flex icons-wrapper justify-content-between">
+                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <i class="bi bi-check-square curoser-pointer"></i>
+              </div>
+              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
+              <div
+                class="main-btn fn-700 text-white white-space-nowrap text-center"
+              >
+                متواجد (٥٠٠)
+              </div>
+            </div>
+          </div>
+          <div class="col-3 pe-0 mb-3">
+            <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
+              <div class="d-flex icons-wrapper justify-content-between">
+                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <i class="bi bi-check-square curoser-pointer"></i>
+              </div>
+              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
+              <div
+                class="main-btn fn-700 text-white white-space-nowrap text-center"
+              >
+                متواجد (٥٠٠)
+              </div>
+            </div>
+          </div>
+          <div class="col-3 pe-0 mb-3">
+            <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
+              <div class="d-flex icons-wrapper justify-content-between">
+                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <i class="bi bi-check-square curoser-pointer"></i>
+              </div>
+              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
+              <div
+                class="main-btn fn-700 text-white white-space-nowrap text-center"
+              >
+                متواجد (٥٠٠)
+              </div>
+            </div>
+          </div>
+          <div class="col-3 pe-0 mb-3">
+            <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
+              <div class="d-flex icons-wrapper justify-content-between">
+                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <i class="bi bi-check-square curoser-pointer"></i>
+              </div>
+              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
+              <div
+                class="main-btn fn-700 text-white white-space-nowrap text-center"
+              >
+                متواجد (٥٠٠)
+              </div>
+            </div>
+          </div>
+          <div class="col-3 pe-0 mb-3">
+            <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
+              <div class="d-flex icons-wrapper justify-content-between">
+                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <i class="bi bi-check-square curoser-pointer"></i>
+              </div>
+              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
+              <div
+                class="main-btn fn-700 text-white white-space-nowrap text-center"
+              >
+                متواجد (٥٠٠)
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- auth btns -->
+        <div class="btns-wrapper d-flex justify-content-center mt-5">
+          <button
+            class="main-btn d-flex align-items-center justify-content-center active-btn mx-3"
+          >
+            <img src="./assets/icons/tabler_door-enter.png" alt="" />
+            <p class="my-0 fn-700 white-space-nowrap fz-12 mx-1">تسجيل دخول</p>
+          </button>
+          <button
+            class="main-btn d-flex align-items-center justify-content-center sucess-btn text-white mx-3"
+          >
+            <img src="./assets/icons/tabler_door-exit.png" alt="" />
+            <p class="my-0 fn-700 white-space-nowrap fz-12 mx-1">تسجيل خروج</p>
+          </button>
+        </div>
+      </div>
+      <!-- /Sec tab (visiting places step) -->
+      <!-- third tab (notes step) -->
+      <div class="step third-step has-divider col-lg-3 col-md-3 col-sm-12">
+        <!-- third step header -->
+        <div
+          class="tab-header d-flex justify-content-between align-items-center"
+        >
+          <p class="my-0">
+            الخطوه الثالثه
+            <span>(الملاحظات) </span>
+          </p>
+          <img src="./assets/icons/check-circle.png" alt="check" />
+        </div>
+        <!-- info about the person  -->
+        <p class="d-flex align-items-center mb-1 mt-3">
+          <span class="fz-14 fn-700"> معلومات عن الشخص </span>
+          <img class="me-3" src="./assets/icons/info.png" alt="" />
+        </p>
+        <!-- info about the person form -->
+        <div class="info-about-form-wrapper mt-3">
+          <!--  person info btns -->
+          <div class="d-flex">
+            <button
+              class="main-nav-btn d-flex align-items-center justify-content-center px-4 py-1 border-bottom-0 active-btn"
+            >
+              <i class="bi bi-check2-square"></i>
+              <p class="my-0 pe-2 fz-12">ملاحظات الدخول</p>
+            </button>
+            <button
+              class="main-nav-btn d-flex align-items-center justify-content-center px-4 border-bottom-0 py-1"
+            >
+              <i class="bi bi-check2-square"></i>
+              <p class="my-0 pe-2 fz-12">ملاحظات الخروج</p>
+            </button>
+          </div>
+          <!-- check boxes wrapper -->
+          <div class="info-about-form py-3 px-4">
+            <p class="mb-1 d-flex align-items-center">
+              <i class="bi bi-check-square curoser-pointer"></i>
+              <span class="fz-12 fn-600 px-2">شنطه سفر</span>
+            </p>
+            <p class="mb-1 d-flex align-items-center">
+              <i class="bi bi-check-square curoser-pointer"></i>
+              <span class="fz-12 fn-600 px-2">عده خفيفه</span>
+            </p>
+          </div>
+        </div>
+        <!-- additional info  -->
+        <p class="d-flex align-items-center mb-1 mt-3">
+          <span class="fz-14 fn-700"> معلومات اضافيه </span>
+          <img class="me-3" src="./assets/icons/info.png" alt="" />
+        </p>
+        <!-- additional info form -->
+        <div class="info-about-form-wrapper mt-3">
+          <!-- additiona info btns  -->
+          <div class="d-flex">
+            <button
+              class="main-nav-btn d-flex align-items-center justify-content-center px-4 py-1 border-bottom-0 active-btn"
+            >
+              <i class="bi bi-check2-square"></i>
+              <p class="my-0 pe-2 fz-12">ملاحظات</p>
+            </button>
+            <button
+              class="main-nav-btn d-flex align-items-center justify-content-center px-4 border-bottom-0 py-1"
+            >
+              <img src="./assets/icons/Attachment.png" alt="" />
+              <p class="my-0 pe-2 fz-12">المرفقات</p>
+            </button>
+
+            <button
+              class="main-nav-btn d-flex align-items-center justify-content-center px-4 border-bottom-0 py-1"
+            >
+              <i class="bi bi-check2-square"></i>
+              <p class="my-0 pe-2 fz-12">معلومات اخري</p>
+            </button>
+          </div>
+          <!-- form wrapper -->
+          <div class="info-about-form py-2 px-4">
+            <!-- email -->
+            <div class="col-12 input-wrapper mb-2">
+              <input
+                type="email"
+                class="form-control bg-seaSalt"
+                placeholder="البريد الاليكتروني "
+              />
+            </div>
+            <!-- phone -->
+            <div class="col-12 input-wrapper">
+              <input
+                type="phone"
+                class="form-control bg-seaSalt"
+                placeholder="الهاتف المحمول "
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Visit Destination -->
+        <div class="bg-seaSalt rounded-1 p-2 mt-5">
+          <p class="d-flex align-items-center mb-1 mt-3">
+            <span class="fz-14 fn-700"> التصفيه بواسطه جهه الزياره </span>
+            <img class="me-3" src="./assets/icons/info.png" alt="" />
+          </p>
+          <!-- select box -->
+          <div class="input-wrapper mb-4 mt-3">
+            <select class="form-select">
+              <option class="text-gray" selected>
+                الاداره العامه الهندسيه
+              </option>
+            </select>
+          </div>
+          <!-- data info -->
+          <div class="data-info d-flex text-center">
+            <div class="col-3 fz-14 fn-700">
+              <p class="mb-2">دخول اليوم</p>
+              <p>110</p>
+            </div>
+            <div class="col-3 fz-14 fn-700">
+              <p class="mb-2">خروج اليوم</p>
+              <p>234</p>
+            </div>
+            <div class="col-3 fz-14 fn-700">
+              <p class="mb-2">المتواجد</p>
+              <p>567</p>
+            </div>
+            <div class="col-3 fz-14 fn-700">
+              <p class="mb-2">مبيت</p>
+              <p>13</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /third tab (notes step) -->
+    <!-- /layout for tabs -->
+
+    <!-- bootstrap js link -->
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

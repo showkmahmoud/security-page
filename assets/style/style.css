@@ -1,0 +1,338 @@
+body {
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+  box-sizing: border-box;
+  /* background: #222b32; */
+}
+/* main colors */
+:root {
+  --primary: #5d87ff;
+  --Forest_Green: #1f8e3d;
+  --seasalt: #f6f6f6;
+  --required: #ac2022;
+  --gold: #655ae6;
+  --balack_Gunmetal: #222b32;
+  --white: #ffffff;
+  --lavender: #e4ebff;
+  --honeydew: #e0f4e5;
+  --primary-txt: #222b32;
+  --sec-txt: #474948;
+  --third-txt: #7a7a7a;
+  --forth-txt: #999999;
+}
+
+/* main navbar */
+nav {
+  position: fixed;
+  margin-bottom: 18px;
+  padding-left: 22px;
+  top: 0;
+  z-index: 11;
+  background: var(--white);
+}
+.main-nav-btn {
+  font-weight: 700;
+  font-size: 18px;
+  padding: 8px 58px;
+  border-top: 1px solid var(--forth-txt);
+  border-bottom: 1px solid var(--forth-txt);
+  border-left: 1px solid var(--forth-txt);
+  border-right: none;
+  color: var(--sec-txt);
+  background: var(--seasalt);
+  border-radius: 8px 8px 0px 0px;
+  cursor: pointer;
+}
+.main-nav-btn:hover {
+  background: #eee;
+}
+.active-btn:hover,
+.active-sidebar-item:hover {
+  background: #668cf8;
+}
+.delete-btn {
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 16px;
+  background: var(--lavender);
+  border-radius: 4px;
+  border: 0.8px solid var(--primary);
+  cursor: pointer;
+  box-shadow: 0px 0.83px 0.8px 0px rgba(0, 0, 0, 0.25);
+}
+.delete-btn:hover {
+  background: #ecf1ff;
+}
+/* /main navbar */
+/* side bar */
+.sidebar {
+  position: fixed;
+  width: 55px;
+  left: 22px;
+  top: 58px;
+  border: 2px solid #c4c1c1;
+  height: 840px;
+  border-radius: 8px;
+  padding: 19px 0px;
+  background: var(--white);
+  z-index: 11;
+}
+/* all the imgs except the active */
+.sidebar img:not(.active-sidebar-item) {
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+}
+.active-sidebar-item {
+  border-radius: 8px;
+  padding: 16px 12px 11px;
+  background: var(--primary);
+}
+.sidebar-main-btns {
+  border-bottom: 2px solid #c4c1c1;
+}
+.sidebar-item {
+  cursor: pointer;
+}
+/* /side bar */
+/* layout-steps */
+.layout-steps {
+  padding: 0 13px 0 37px;
+  margin-top: 61px;
+}
+.step {
+  margin-right: 9px;
+  /* width: 516px; */
+}
+.tab-header {
+  border: 1px var(--Forest_Green) solid;
+  background-color: var(--honeydew);
+  padding: 15px 22px;
+  border-radius: 12px 12px 0 0;
+}
+.tab-header p {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--balack_Gunmetal);
+}
+.tab-header p span {
+  font-weight: 600;
+}
+/* /layout-steps */
+/* first step (user info) */
+.personal-id {
+  background: var(--seasalt);
+  color: var(--sec-txt);
+}
+.personal-id p {
+  font-size: 12px;
+  text-align: center;
+}
+.personal-id .img-wrapper {
+  background: #fff;
+  padding: 16px 2px;
+  text-align: center;
+}
+.personal-id-screen,
+.id-form-wrapper,
+.car-form-wrapper {
+  background: var(--seasalt);
+  border-radius: 12px 0 12px 12px;
+}
+.personal-id-screen .delete-btn {
+  background: var(--forth-txt);
+  border-radius: 8px;
+}
+.personal-id-screen .delete-btn i {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+}
+.back-id-data {
+  width: 90px;
+  height: 90px;
+  margin: 24px auto 15px;
+}
+.id-form-wrapper,
+.car-form-wrapper {
+  border-radius: 12px;
+}
+.form-wrapper p,
+.form-wrapper label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--balack_Gunmetal);
+}
+.first-step input[type^="text"],
+.first-step input[type^="date"],
+.first-step input[type^="number"],
+.first-step .form-select {
+  border-radius: 4px;
+  border: 1px solid var(--forth-txt);
+}
+.first-step input[type^="date"] {
+  margin-top: 6px;
+  height: 32px;
+}
+.form-select {
+  margin-top: 3px;
+}
+.form-control:focus,
+.form-select:focus {
+  border: 1px var(--Forest_Green) solid;
+  box-shadow: none;
+}
+.first-step input:focus-visible {
+  outline: none;
+  border: 1px var(--Forest_Green) solid;
+}
+/* /first step (user info) */
+
+/* Sec tab (visiting places step) */
+.sec-step input {
+  background: var(--seasalt);
+  border-radius: 4px;
+  border: 1px solid var(--forth-txt);
+}
+.sec-step .main-btn {
+  font-weight: 700;
+  font-size: 18px;
+  padding: 7px 16px;
+  border: 1px solid var(--primary);
+  color: var(--sec-txt);
+  background: var(--seasalt);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.sec-step .main-btn:hover {
+  background: #eee;
+}
+.sec-step .active-btn {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.sec-step .active-btn:hover {
+  background: #668cf8;
+}
+.sec-step input::placeholder {
+  font-size: 12px;
+}
+.sec-step .form-select {
+  border-radius: 4px;
+  border: 1px solid var(--forth-txt);
+  /* background: var(--seasalt); */
+}
+.sec-step .form-select:focus {
+  border: 1px var(--Forest_Green) solid;
+  box-shadow: none;
+}
+.sec-step .used-visit-wrapper .icons-wrapper {
+  color: var(--sec-txt);
+}
+.sec-step .used-visit-wrapper p {
+  color: var(--third-txt);
+}
+.sec-step .used-visit-wrapper .main-btn {
+  font-size: 12px;
+  padding: 7px 2px;
+  border: 1px solid var(--seasalt);
+  color: var(--sec-txt);
+  background: #a1a0a0;
+}
+.sec-step .used-visit-wrapper .main-btn:hover {
+  background: #919090;
+}
+.sec-step .used-visit-wrapper.active-visit {
+  border: 2px solid var(--primary);
+}
+.sec-step .active-visit .icons-wrapper {
+  color: var(--primary);
+}
+.sec-step .used-visit-wrapper .active-visit-btn {
+  background: var(--primary);
+}
+.sec-step .used-visit-wrapper .active-visit-btn:hover {
+  background: #668cf8;
+}
+.sec-step .sucess-btn {
+  background: var(--Forest_Green);
+  border: 1px solid var(--Forest_Green);
+}
+.sec-step .sucess-btn:hover {
+  background: #24a446;
+}
+/* /Sec tab (visiting places step) */
+
+/* third tab (visiting places step) */
+.info-about-form {
+  border-radius: 4px 0px 4px 4px;
+  border: 1px solid var(--forth-txt);
+}
+/* /third tab (visiting places step) */
+/* common Style */
+.container {
+  padding: 0px 22px 24px;
+}
+img,
+a {
+  display: inline-block;
+}
+.fn-700 {
+  font-weight: 700;
+}
+.fn-500 {
+  font-weight: 500;
+}
+.fn-600 {
+  font-weight: 600;
+}
+.fz-12 {
+  font-size: 12px;
+}
+.fz-14 {
+  font-size: 14px;
+}
+.input-label {
+  color: var(--primary-txt);
+  font-weight: 700;
+  font-size: 14px;
+}
+.has-divider {
+  position: relative;
+}
+.has-divider::after {
+  content: "";
+  height: 97%;
+  width: 1px;
+  background: var(--lavender);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -13px;
+}
+img.icon {
+  width: 24px;
+  height: 24px;
+}
+.active-btn,
+.active-id {
+  background: var(--primary);
+  color: var(--white);
+  border: 1px solid var(--primary);
+}
+.curoser-pointer {
+  cursor: pointer;
+}
+.required {
+  color: var(--required);
+  font-weight: 600;
+  font-size: 18px;
+}
+.bg-ligh-gray {
+  background: #eaeaea;
+}
+.bg-seaSalt {
+  background: var(--seasalt);
+}
+/* /common Style */
