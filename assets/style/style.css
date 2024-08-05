@@ -148,6 +148,9 @@ nav {
   height: 20px;
   line-height: 20px;
 }
+.personal-id-screen .personalIdFront {
+  width: 400px;
+}
 .back-id-data {
   width: 90px;
   height: 90px;
@@ -239,6 +242,7 @@ nav {
   border: 1px solid var(--seasalt);
   color: var(--sec-txt);
   background: #a1a0a0;
+  max-width: 165px;
 }
 .sec-step .used-visit-wrapper .main-btn:hover {
   background: #919090;
@@ -261,6 +265,9 @@ nav {
 }
 .sec-step .sucess-btn:hover {
   background: #24a446;
+}
+.most-used-visits {
+  margin-right: -15px;
 }
 /* /Sec tab (visiting places step) */
 
@@ -335,4 +342,29 @@ img.icon {
 .bg-seaSalt {
   background: var(--seasalt);
 }
+.accordion-button::after {
+  margin-right: auto;
+  margin-left: 0;
+}
+.accordion-button:focus {
+  border-color: var(--forth-txt);
+  box-shadow: var(--forth-txt);
+}
+.accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: var(--seasalt);
+}
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+  color: #000;
+}
 /* /common Style */
+
+/* mediaquires */
+@media (max-width: 1600px) {
+  .main-nav-btn,
+  .delete-btn {
+    font-size: 16px;
+    padding: 8px 10px;
+  }
+}

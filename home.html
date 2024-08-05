@@ -17,8 +17,8 @@
     />
     <!-- /Fonts -->
     <!-- style -->
-    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="../assets/style/style.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
     <!-- /style -->
     <title>Home</title>
   </head>
@@ -76,7 +76,7 @@
           class="sidebar-item"
           alt="unlock the sidebar"
         />
-        <!-- lock the sidebar -->
+        <!-- @TODO lock the sidebar -->
         <!-- <i class="bi bi-unlock sidebar-item fs-4"></i> -->
 
         <!-- open sidebar -->
@@ -161,7 +161,7 @@
     </div>
     <!-- /side bar -->
     <!-- layout for tabs -->
-    <div class="layout-steps row mx-0 gap-3">
+    <div class="layout-steps row mx-0 gap-3 pb-4">
       <!-- first tab (main visitor info step) -->
       <div class="step first-step has-divider col-lg-5 col-md-5 col-sm-12 pb-4">
         <div
@@ -217,8 +217,8 @@
           <div class="col-3 px-0">
             <div class="state-wrapper px-0 text-center">
               <img class="" src="./assets//icons/state=Allow.png" alt="" />
-              <!-- <img src="./assets//icons/state=Deny.png" alt="" /> -->
-              <!-- <img src="./assets//icons/state=appointment.png" alt="" /> -->
+              <!-- @TODO Deny <img src="./assets/icons/state=Deny.png" alt="" /> -->
+              <!-- @TODO appointment <img src="./assets/icons/state=appointment.png" alt="" /> -->
             </div>
           </div>
         </div>
@@ -232,7 +232,11 @@
           </button>
           <div class="personal-id-screen d-flex p-4 py-3">
             <div class="col-9">
-              <img src="./assets/imgs/personalIdFront.png" alt="" />
+              <img
+                class="personalIdFront"
+                src="./assets/imgs/personalIdFront.png"
+                alt=""
+              />
             </div>
             <div class="col-3 d-flex flex-column">
               <div class="delete-btn p-3 border-0 text-center me-auto">
@@ -479,9 +483,9 @@
           <span class="fz-14 fn-700">الاماكن الاكثر استخداما</span>
         </p>
         <!-- most used visits -->
-        <div class="row mx-0">
+        <div class="most-used-visits row me-0 justify-content-between">
           <!-- active -->
-          <div class="col-3 pe-0">
+          <div class="col-4 pe-0">
             <div
               class="used-visit-wrapper bg-ligh-gray p-2 rounded-3 active-visit"
             >
@@ -498,7 +502,7 @@
             </div>
           </div>
           <!-- used visits -->
-          <div class="col-3 pe-0 mb-3">
+          <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
                 <i class="bi bi-three-dots-vertical curoser-pointer"></i>
@@ -512,7 +516,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 pe-0 mb-3">
+          <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
                 <i class="bi bi-three-dots-vertical curoser-pointer"></i>
@@ -526,7 +530,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 pe-0 mb-3">
+          <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
                 <i class="bi bi-three-dots-vertical curoser-pointer"></i>
@@ -540,7 +544,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 pe-0 mb-3">
+          <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
                 <i class="bi bi-three-dots-vertical curoser-pointer"></i>
@@ -554,7 +558,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 pe-0 mb-3">
+          <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
                 <i class="bi bi-three-dots-vertical curoser-pointer"></i>
@@ -568,7 +572,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 pe-0 mb-3">
+          <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
                 <i class="bi bi-three-dots-vertical curoser-pointer"></i>
@@ -582,7 +586,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 pe-0 mb-3">
+          <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
                 <i class="bi bi-three-dots-vertical curoser-pointer"></i>
@@ -596,7 +600,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 pe-0 mb-3">
+          <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
                 <i class="bi bi-three-dots-vertical curoser-pointer"></i>
@@ -610,7 +614,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 pe-0 mb-3">
+          <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
                 <i class="bi bi-three-dots-vertical curoser-pointer"></i>
@@ -624,7 +628,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 pe-0 mb-3">
+          <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
                 <i class="bi bi-three-dots-vertical curoser-pointer"></i>
@@ -638,7 +642,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 pe-0 mb-3">
+          <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
                 <i class="bi bi-three-dots-vertical curoser-pointer"></i>
@@ -654,7 +658,7 @@
           </div>
         </div>
         <!-- auth btns -->
-        <div class="btns-wrapper d-flex justify-content-center mt-5">
+        <div class="btns-wrapper d-flex justify-content-center mt-3">
           <button
             class="main-btn d-flex align-items-center justify-content-center active-btn mx-3"
           >
@@ -762,6 +766,53 @@
                 class="form-control bg-seaSalt"
                 placeholder="الهاتف المحمول "
               />
+            </div>
+          </div>
+        </div>
+        <!-- belongings -->
+        <div class="belongings-wrapper">
+          <p class="d-flex align-items-center mb-1 mt-3">
+            <span class="fz-14 fn-700"> المتعلقات </span>
+            <img class="me-3" src="./assets/icons/info.png" alt="" />
+          </p>
+          <!-- accordion -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  المتعلقات (القائمه ا)
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="px-4 py-2">
+                  <p class="mb-1 d-flex align-items-center">
+                    <i class="bi bi-dash-square curoser-pointer"></i>
+
+                    <span class="fz-12 fn-600 px-2">شنطه سفر</span>
+                  </p>
+                  <p class="mb-1 d-flex align-items-center">
+                    <i class="bi bi-plus-square curoser-pointer"></i>
+                    <span class="fz-12 fn-600 px-2">سياره</span>
+                  </p>
+                  <p class="mb-1 d-flex align-items-center">
+                    <i class="bi bi-dash-square curoser-pointer"></i>
+
+                    <span class="fz-12 fn-600 px-2">عده خفيفه</span>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
