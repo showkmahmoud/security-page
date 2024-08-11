@@ -148,13 +148,13 @@ nav {
   height: 20px;
   line-height: 20px;
 }
-.personal-id-screen .personalIdFront {
-  width: 400px;
+.personalIdFront,
+.backPersonalId {
+  width: 305px;
 }
 .back-id-data {
   width: 90px;
   height: 90px;
-  margin: 24px auto 15px;
 }
 .id-form-wrapper,
 .car-form-wrapper {
@@ -192,11 +192,13 @@ nav {
 /* /first step (user info) */
 
 /* Sec tab (visiting places step) */
-.sec-step input {
+.sec-step input,
+.sec-step textarea.notes-area {
   background: var(--seasalt);
   border-radius: 4px;
   border: 1px solid var(--forth-txt);
 }
+
 .sec-step .main-btn {
   font-weight: 700;
   font-size: 18px;
@@ -275,6 +277,23 @@ nav {
 .info-about-form {
   border-radius: 4px 0px 4px 4px;
   border: 1px solid var(--forth-txt);
+}
+.third-step .accordion-item {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.third-step textarea.notes-area {
+  background: var(--seasalt);
+  border-radius: 4px;
+  border: 1px solid var(--forth-txt);
+  height: 30px;
+}
+.third-step textarea::placeholder {
+  font-size: 12px;
+}
+.third-step .belongings-wrapper .notes-area {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
 }
 /* /third tab (visiting places step) */
 /* common Style */

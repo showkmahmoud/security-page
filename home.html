@@ -161,7 +161,7 @@
     </div>
     <!-- /side bar -->
     <!-- layout for tabs -->
-    <div class="layout-steps row mx-0 gap-3 pb-4">
+    <div class="layout-steps row mx-0 gap-3 pb-2">
       <!-- first tab (main visitor info step) -->
       <div class="step first-step has-divider col-lg-5 col-md-5 col-sm-12 pb-4">
         <div
@@ -230,25 +230,24 @@
             <img src="./assets/icons/check-square.png" alt="" />
             <p class="my-0 pe-3 fz-12">البطاقه الشخصيه</p>
           </button>
-          <div class="personal-id-screen d-flex p-4 py-3">
-            <div class="col-9">
-              <img
-                class="personalIdFront"
-                src="./assets/imgs/personalIdFront.png"
-                alt=""
-              />
-            </div>
-            <div class="col-3 d-flex flex-column">
-              <div class="delete-btn p-3 border-0 text-center me-auto">
-                <i class="bi bi-trash text-white fs-4"></i>
-              </div>
-              <img
-                class="back-id-data"
-                src="./assets/imgs/Screenshot 2024-07-22 at 10.27.52 3.png"
-                alt=""
-              />
-              <img src="./assets/imgs/backPersonalId.png" alt="" />
-            </div>
+          <div
+            class="personal-id-screen d-flex px-3 py-3 justify-content-between"
+          >
+            <img
+              class="personalIdFront"
+              src="./assets/imgs/personalIdFront.png"
+              alt=""
+            />
+            <img
+              class="backPersonalId"
+              src="./assets/imgs/backPersonalId.png"
+              alt=""
+            />
+            <img
+              class="back-id-data"
+              src="./assets/imgs/Screenshot 2024-07-22 at 10.27.52 3.png"
+              alt=""
+            />
           </div>
         </div>
         <!-- forms -->
@@ -264,10 +263,6 @@
             <form class="row">
               <!-- name -->
               <div class="col-12 input-wrapper mb-3">
-                <label for="Name" class="form-label">
-                  الاسم
-                  <span class="required">*</span>
-                </label>
                 <input
                   type="text"
                   class="form-control"
@@ -277,10 +272,6 @@
               </div>
               <!-- ID Number -->
               <div class="col-7 input-wrapper mb-3">
-                <label for="idNumber" class="form-label">
-                  الرقم القومي
-                  <span class="required">*</span>
-                </label>
                 <input
                   type="text"
                   class="form-control"
@@ -290,10 +281,6 @@
               </div>
               <!-- birth countery -->
               <div class="col-5 input-wrapper mb-3">
-                <label for="birth countery" class="form-label">
-                  محافظه الميلاد
-                  <span class="required">*</span>
-                </label>
                 <input
                   type="text"
                   class="form-control"
@@ -303,10 +290,6 @@
               </div>
               <!-- Address -->
               <div class="col-7 input-wrapper mb-3">
-                <label for="address" class="form-label">
-                  العنوان
-                  <span class="required">*</span>
-                </label>
                 <input
                   type="text"
                   class="form-control"
@@ -316,7 +299,6 @@
               </div>
               <!-- Gender -->
               <div class="col-5 input-wrapper mb-3">
-                <label class="form-label"> النوع </label>
                 <select class="form-select">
                   <option class="text-gray" selected>ذكر</option>
                   <option class="text-gray" value="1">أنثى</option>
@@ -324,17 +306,12 @@
               </div>
               <!-- Work -->
               <div class="col-7 input-wrapper">
-                <label class="form-label">
-                  جهه العمل
-                  <span class="required">*</span>
-                </label>
                 <select class="form-select">
                   <option class="text-gray" selected>جهه عمل الزائر</option>
                 </select>
               </div>
               <!-- date of birth -->
               <div class="col-5 input-wrapper">
-                <label class="form-label"> تاريخ الميلاد </label>
                 <input
                   class="w-100 px-2"
                   type="date"
@@ -354,9 +331,6 @@
             <form class="row">
               <!-- Car Number -->
               <div class="col-12 input-wrapper mb-3">
-                <label for="CarNumberPlate" class="form-label">
-                  رقم السياره
-                </label>
                 <input
                   type="number"
                   class="form-control"
@@ -366,7 +340,6 @@
               </div>
               <!-- Car Type -->
               <div class="col-12 input-wrapper mb-3 mt-1">
-                <label for="carType" class="form-label"> فئه السياره </label>
                 <input
                   type="text"
                   class="form-control"
@@ -376,7 +349,6 @@
               </div>
               <!-- date of production -->
               <div class="col-12 input-wrapper mb-3">
-                <label class="form-label"> تاريخ الاصدار </label>
                 <input
                   class="w-100 px-2"
                   type="date"
@@ -387,7 +359,6 @@
               </div>
               <!-- date of exp -->
               <div class="col-12 input-wrapper mt-1">
-                <label class="form-label"> تاريخ الانتهاء </label>
                 <input
                   class="w-100 px-2"
                   type="date"
@@ -414,7 +385,7 @@
           <img src="./assets/icons/check-circle.png" alt="check" />
         </div>
         <!-- visits ID  -->
-        <p class="d-flex align-items-center mb-1 mt-3">
+        <p class="d-flex align-items-center mb-1 mt-2">
           <span class="fz-14 fn-700"> رقم بطاقه الزياره </span>
           <img class="me-3" src="./assets/icons/info.png" alt="" />
         </p>
@@ -447,7 +418,7 @@
           </div>
         </div>
         <!-- visites places -->
-        <p class="d-flex align-items-center mb-1 mt-4">
+        <p class="d-flex align-items-center mb-1 mt-2">
           <span class="fz-14 fn-700"> رقم بطاقه الزياره </span>
           <img class="me-3" src="./assets/icons/info.png" alt="" />
         </p>
@@ -461,25 +432,25 @@
             />
           </div>
           <!-- levels -->
-          <div class="col-4 input-wrapper mb-3 mt-2 pe-0 ps-1">
+          <div class="col-4 input-wrapper mb-2 mt-2 pe-0 ps-1">
             <select class="form-select fz-12">
               <option class="text-gray" selected>المستوى الاول</option>
               <option class="text-gray" value="1">المستوى الثانى</option>
             </select>
           </div>
-          <div class="col-4 input-wrapper mb-3 mt-2 px-1">
+          <div class="col-4 input-wrapper mb-2 mt-2 px-1">
             <select class="form-select fz-12">
               <option class="text-gray" selected>المستوى الثانى</option>
             </select>
           </div>
-          <div class="col-4 input-wrapper mb-3 mt-2 pe-1 ps-0">
+          <div class="col-4 input-wrapper mb-2 mt-2 pe-1 ps-0">
             <select class="form-select fz-12">
               <option class="text-gray" selected>المستوى الثالث</option>
             </select>
           </div>
         </div>
         <!-- The Most Used Places -->
-        <p class="d-flex align-items-center mb-1 mt-3">
+        <p class="d-flex align-items-center mb-1 mt-1">
           <span class="fz-14 fn-700">الاماكن الاكثر استخداما</span>
         </p>
         <!-- most used visits -->
@@ -490,10 +461,9 @@
               class="used-visit-wrapper bg-ligh-gray p-2 rounded-3 active-visit"
             >
               <div class="d-flex icons-wrapper justify-content-between">
-                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
                 <i class="bi bi-check-square-fill curoser-pointer"></i>
               </div>
-              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
               <div
                 class="main-btn active-visit-btn fn-700 text-white white-space-nowrap text-center"
               >
@@ -505,10 +475,9 @@
           <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
-                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
                 <i class="bi bi-check-square curoser-pointer"></i>
               </div>
-              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
               <div
                 class="main-btn fn-700 text-white white-space-nowrap text-center"
               >
@@ -519,10 +488,9 @@
           <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
-                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
                 <i class="bi bi-check-square curoser-pointer"></i>
               </div>
-              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
               <div
                 class="main-btn fn-700 text-white white-space-nowrap text-center"
               >
@@ -533,10 +501,9 @@
           <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
-                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
                 <i class="bi bi-check-square curoser-pointer"></i>
               </div>
-              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
               <div
                 class="main-btn fn-700 text-white white-space-nowrap text-center"
               >
@@ -547,10 +514,9 @@
           <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
-                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
                 <i class="bi bi-check-square curoser-pointer"></i>
               </div>
-              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
               <div
                 class="main-btn fn-700 text-white white-space-nowrap text-center"
               >
@@ -561,10 +527,9 @@
           <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
-                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
                 <i class="bi bi-check-square curoser-pointer"></i>
               </div>
-              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
               <div
                 class="main-btn fn-700 text-white white-space-nowrap text-center"
               >
@@ -575,10 +540,9 @@
           <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
-                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
                 <i class="bi bi-check-square curoser-pointer"></i>
               </div>
-              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
               <div
                 class="main-btn fn-700 text-white white-space-nowrap text-center"
               >
@@ -589,10 +553,9 @@
           <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
-                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
                 <i class="bi bi-check-square curoser-pointer"></i>
               </div>
-              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
               <div
                 class="main-btn fn-700 text-white white-space-nowrap text-center"
               >
@@ -603,10 +566,9 @@
           <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
-                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
                 <i class="bi bi-check-square curoser-pointer"></i>
               </div>
-              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
               <div
                 class="main-btn fn-700 text-white white-space-nowrap text-center"
               >
@@ -617,10 +579,9 @@
           <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
-                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
                 <i class="bi bi-check-square curoser-pointer"></i>
               </div>
-              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
               <div
                 class="main-btn fn-700 text-white white-space-nowrap text-center"
               >
@@ -631,10 +592,9 @@
           <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
-                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
                 <i class="bi bi-check-square curoser-pointer"></i>
               </div>
-              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
               <div
                 class="main-btn fn-700 text-white white-space-nowrap text-center"
               >
@@ -645,10 +605,9 @@
           <div class="col-4 pe-0 mb-3">
             <div class="used-visit-wrapper bg-ligh-gray p-2 rounded-3">
               <div class="d-flex icons-wrapper justify-content-between">
-                <i class="bi bi-three-dots-vertical curoser-pointer"></i>
+                <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
                 <i class="bi bi-check-square curoser-pointer"></i>
               </div>
-              <p class="fz-12 fn-700 mb-2">السجل المدني (الاداره العامه)</p>
               <div
                 class="main-btn fn-700 text-white white-space-nowrap text-center"
               >
@@ -658,7 +617,7 @@
           </div>
         </div>
         <!-- auth btns -->
-        <div class="btns-wrapper d-flex justify-content-center mt-3">
+        <div class="btns-wrapper d-flex justify-content-center mt-1">
           <button
             class="main-btn d-flex align-items-center justify-content-center active-btn mx-3"
           >
@@ -692,7 +651,7 @@
           <img class="me-3" src="./assets/icons/info.png" alt="" />
         </p>
         <!-- info about the person form -->
-        <div class="info-about-form-wrapper mt-3">
+        <div class="info-about-form-wrapper mt-2">
           <!--  person info btns -->
           <div class="d-flex">
             <button
@@ -721,12 +680,12 @@
           </div>
         </div>
         <!-- additional info  -->
-        <p class="d-flex align-items-center mb-1 mt-3">
+        <p class="d-flex align-items-center mb-1 mt-2">
           <span class="fz-14 fn-700"> معلومات اضافيه </span>
           <img class="me-3" src="./assets/icons/info.png" alt="" />
         </p>
         <!-- additional info form -->
-        <div class="info-about-form-wrapper mt-3">
+        <div class="info-about-form-wrapper mt-2">
           <!-- additiona info btns  -->
           <div class="d-flex">
             <button
@@ -771,7 +730,7 @@
         </div>
         <!-- belongings -->
         <div class="belongings-wrapper">
-          <p class="d-flex align-items-center mb-1 mt-3">
+          <p class="d-flex align-items-center mb-1 mt-2">
             <span class="fz-14 fn-700"> المتعلقات </span>
             <img class="me-3" src="./assets/icons/info.png" alt="" />
           </p>
@@ -792,7 +751,7 @@
               </h2>
               <div
                 id="collapseOne"
-                class="accordion-collapse collapse show"
+                class="accordion-collapse collapse"
                 aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample"
               >
@@ -815,9 +774,17 @@
               </div>
             </div>
           </div>
+          <!-- notes -->
+          <div class="">
+            <textarea
+              class="form-control notes-area"
+              placeholder="ملاحظات"
+              id="textarea"
+            ></textarea>
+          </div>
         </div>
         <!-- Visit Destination -->
-        <div class="bg-seaSalt rounded-1 p-2 mt-5">
+        <div class="bg-seaSalt rounded-1 p-2 pb-1 mt-3">
           <p class="d-flex align-items-center mb-1 mt-3">
             <span class="fz-14 fn-700"> التصفيه بواسطه جهه الزياره </span>
             <img class="me-3" src="./assets/icons/info.png" alt="" />
@@ -834,19 +801,19 @@
           <div class="data-info d-flex text-center">
             <div class="col-3 fz-14 fn-700">
               <p class="mb-2">دخول اليوم</p>
-              <p>110</p>
+              <p class="mb-1">110</p>
             </div>
             <div class="col-3 fz-14 fn-700">
               <p class="mb-2">خروج اليوم</p>
-              <p>234</p>
+              <p class="mb-1">234</p>
             </div>
             <div class="col-3 fz-14 fn-700">
               <p class="mb-2">المتواجد</p>
-              <p>567</p>
+              <p class="mb-1">567</p>
             </div>
             <div class="col-3 fz-14 fn-700">
               <p class="mb-2">مبيت</p>
-              <p>13</p>
+              <p class="mb-1">13</p>
             </div>
           </div>
         </div>
@@ -858,7 +825,7 @@
     <!-- bootstrap js link -->
     <script src="../assets/js/bootstrap.bundle.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
